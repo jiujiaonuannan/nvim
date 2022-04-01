@@ -4,6 +4,10 @@ packer.startup(
    -- Packer 可以管理自己本身
    use 'wbthomason/packer.nvim'
 
+	 -------------------------- plugins -------------------------------------------
+    -- nvim-tree (新增)
+    use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+
 	 -- tokyonight
 	 use("folke/tokyonight.nvim")
 	 -- OceanicNext
@@ -21,7 +25,9 @@ packer.startup(
 	 use("ful1e5/onedark.nvim")
 	 -- nightfox
 	 use("EdenEast/nightfox.nvim")
-   -- 你的插件列表...
+
+	 -- nvim-tree (新增)
+	 use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
