@@ -3,6 +3,10 @@ packer.startup(
   function(use)
    -- Packer 可以管理自己本身
    use 'wbthomason/packer.nvim'
+
+	 -- tokyonight
+	 use("folke/tokyonight.nvim")
+
    -- 你的插件列表...
 end)
 
