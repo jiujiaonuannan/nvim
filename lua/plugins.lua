@@ -34,6 +34,8 @@ packer.startup(
 	 use "LinArcX/telescope-env.nvim"
 	-- dashboard-nvim (新增)
 	 use("glepnir/dashboard-nvim")
+	 -- project
+	 use("ahmedkhalf/project.nvim")
 
 	 -- nvim-tree (新增)
 	 use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
