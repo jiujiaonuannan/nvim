@@ -11,7 +11,24 @@ packer.startup(
     use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }})
 		 -- lualine (新增)
 		 use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-		 use("arkav/lualine-lsp-progress"
+		 use("arkav/lualine-lsp-progress")
+
+		 -- telescope
+		 use({
+      "nvim-telescope/telescope.nvim",
+      requires = {"nvim-lua/plenary.nvim"}
+    })
+    -- telescope extensions
+    use "LinArcX/telescope-env.nvim"
+    -- dashboard-nvim
+    use("glepnir/dashboard-nvim")
+    -- project
+    use("ahmedkhalf/project.nvim")
+    -- treesitter
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate"
+    })
 
 	 -- tokyonight
 	 use("folke/tokyonight.nvim")
