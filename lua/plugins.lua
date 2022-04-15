@@ -80,6 +80,9 @@ packer.startup(
 		use("lukas-reineke/indent-blankline.nvim")
 
 		use("tami5/lspsaga.nvim" )
+
+		use("mhartington/formatter.nvim")
+
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
