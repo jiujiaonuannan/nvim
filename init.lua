@@ -27,3 +27,5 @@ require("lsp.setup")
 require("lsp.cmp")
 
 require("lsp.ui")
+
+require("plugin-config.indent-blankline")

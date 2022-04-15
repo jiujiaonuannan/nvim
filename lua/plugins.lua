@@ -76,6 +76,8 @@ packer.startup(
 	 use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
 	 -- ui
 	 use("onsails/lspkind-nvim")
+		-- indent-blankline
+		use("lukas-reineke/indent-blankline.nvim")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
