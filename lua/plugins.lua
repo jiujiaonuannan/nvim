@@ -81,7 +81,8 @@ packer.startup(
 
 		use("tami5/lspsaga.nvim" )
 
-		use("mhartington/formatter.nvim")
+		-- use("mhartington/formatter.nvim")
+		use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 
 end)
 

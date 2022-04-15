@@ -30,5 +30,6 @@ require("lsp.ui")
 
 require("plugin-config.indent-blankline")
 
-require("lsp.formatter")
+-- require("lsp.formatter")
+require("lsp.null-ls")
 
