@@ -85,6 +85,8 @@ packer.startup(
 		use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 
 		use("b0o/schemastore.nvim")
+
+		use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
