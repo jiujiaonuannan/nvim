@@ -9,6 +9,7 @@ local servers = {
 	-- 新增
 	html = require("lsp.config.html"),
 	cssls = require("lsp.config.css"),
+	emmet_ls = require("lsp.config.emmet"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do
