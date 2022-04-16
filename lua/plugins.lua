@@ -84,6 +84,7 @@ packer.startup(
 		-- use("mhartington/formatter.nvim")
 		use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 
+		use("b0o/schemastore.nvim")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件
