@@ -1,9 +1,22 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
 
+-- leader key 为空
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+local opt = {
+  noremap = true,
+  silent = true,
+}
+
+-- 本地变量
 local map = vim.api.nvim_set_keymap
--- 用 opt 参数
-local opt = { noremap = true, silent = true }
 
 -- windows 分屏快捷键
 map('n', 'sv', ':vsp<CR>', opt)
@@ -92,22 +105,6 @@ map('i', '<C-s>', '<Esc>:w<cr>', opt)
 
 -- 插件快捷键
 local pluginKeys = {}
-
--- 代码注释插件
--- see ./lua/plugin-config/comment.lua
-pluginKeys.comment = {
-  toggler = {
-    line = 'gcc',
-    block = 'gbc',
-  },
-  opleader = {
-    line = 'gc',
-    bock = 'gb',
-  },
-}
--- ctrl + /
-map('n', '<C-_>', 'gcc', { noremap = false })
-map('v', '<C-_>', 'gcc', { noremap = false })
 
 -- lsp 回调函数快捷键设置
 pluginKeys.mapLSP = function(mapbuf)

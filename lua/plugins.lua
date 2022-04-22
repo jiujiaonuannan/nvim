@@ -66,8 +66,6 @@ packer.startup(function(use)
 
   use({ 'jose-elias-alvarez/nvim-lsp-ts-utils', requires = 'nvim-lua/plenary.nvim' })
 
-  -- Comment
-  use('numToStr/Comment.nvim')
   -- 你的插件列表...
 end)
 
