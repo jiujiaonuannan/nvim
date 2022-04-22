@@ -66,6 +66,8 @@ packer.startup(function(use)
 
   use({ 'jose-elias-alvarez/nvim-lsp-ts-utils', requires = 'nvim-lua/plenary.nvim' })
 
+  use({ 'akinsho/toggleterm.nvim' })
+
   -- 你的插件列表...
 end)
 

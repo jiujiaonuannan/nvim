@@ -35,3 +35,5 @@ require('lsp.ui')
 
 --require('lsp.formatter')
 require('lsp.null-ls')
+
+require("plugin-config.toggleterm")
