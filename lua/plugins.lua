@@ -74,6 +74,9 @@ packer.startup(function(use)
   -- Comment
   use('numToStr/Comment.nvim')
 
+  -- surround
+  use('ur4ltz/surround.nvim')
+
   -- 你的插件列表...
 end)
 
