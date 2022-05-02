@@ -71,6 +71,9 @@ packer.startup(function(use)
   -- nvim-autopairs
   use('windwp/nvim-autopairs')
 
+  -- Comment
+  use('numToStr/Comment.nvim')
+
   -- 你的插件列表...
 end)
 

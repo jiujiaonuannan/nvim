@@ -7,8 +7,8 @@
 --   command_mode = "c",
 
 -- leader key 为空
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 local opt = {
   noremap = true,
@@ -154,6 +154,24 @@ pluginKeys.mapLSP = function(mapbuf)
   -- mapbuf('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opt)
   -- mapbuf('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
 end
+
+-- 代码注释插件
+-- see ./lua/plugin-config/comment.lua
+pluginKeys.comment = {
+  -- Normal 模式快捷键
+  toggler = {
+    line = 'gcc', -- 行注释
+    block = 'gbc', -- 块注释
+  },
+  -- Visual 模式
+  opleader = {
+    line = 'gc',
+    bock = 'gb',
+  },
+}
+-- ctrl + /
+map('n', '<C-_>', 'gcc', { noremap = false })
+map('v', '<C-_>', 'gcc', { noremap = false })
 
 -- nvim-cmp 自动补全
 pluginKeys.cmp = function(cmp)

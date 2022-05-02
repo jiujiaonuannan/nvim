@@ -37,4 +37,7 @@ require('lsp.ui')
 require('lsp.null-ls')
 
 require('plugin-config.toggleterm')
+
 require('plugin-config.nvim-autopairs')
+
+require('plugin-config.comment')
