@@ -68,6 +68,9 @@ packer.startup(function(use)
 
   use({ 'akinsho/toggleterm.nvim' })
 
+  -- nvim-autopairs
+  use('windwp/nvim-autopairs')
+
   -- 你的插件列表...
 end)
 
